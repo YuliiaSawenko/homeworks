@@ -20,11 +20,14 @@ console.log("Довірені адреси:", trustedEmails);
 console.log("Кількість довірених:", trustedEmails.length);
 
 //ДЗ 10.2. Без А
+
 var str = "Wonderful Joyful Happiness Apple";
 
-var re = /(?<!\w)[^Aa]{6,}(?!\w)/;
+var re = /\b[^aA]{6,}\b/g;
 
 console.log("Перевірка: " + re.test(str));
 console.log(str.search(re));
 console.log(str.match(re));
+              
+
 
